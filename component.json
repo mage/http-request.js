@@ -1,7 +1,7 @@
 {
 	"name": "mage-http-request.js",
 	"repo": "mage/http-request.js",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "MAGE's http request",
 	"dependencies": {
 		"Wizcorp/cachepuncher": "0.1.3",
