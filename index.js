@@ -316,6 +316,10 @@ function HttpRequest(options) {
 			}
 		};
 	}
+
+	if ('onerror' in xhr && !xhr.onreadystatechange) {
+		xhr.onerror = onLoad;
+	}
 }
 
 module.exports = HttpRequest;
