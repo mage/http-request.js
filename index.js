@@ -309,6 +309,7 @@ function HttpRequest(options) {
 
 	if ('onload' in xhr) {
 		xhr.onload = onLoad;
+		xhr.onerror = onLoad;
 	} else {
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4) {
