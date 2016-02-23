@@ -307,6 +307,10 @@ function HttpRequest(options) {
 		}, 0);
 	}
 
+	xhr.onerror = function () {
+		onLoad();
+	};
+
 	if ('onload' in xhr) {
 		xhr.onload = onLoad;
 	} else {
