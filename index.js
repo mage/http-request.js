@@ -307,12 +307,9 @@ function HttpRequest(options) {
 		}, 0);
 	}
 
-	xhr.onerror = function () {
-		onLoad();
-	};
-
 	if ('onload' in xhr) {
 		xhr.onload = onLoad;
+		xhr.onerror = onLoad;
 	} else {
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4) {
